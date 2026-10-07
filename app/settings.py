@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     DB_PORT: int
     DB_NAME: str
 
-    model_config = SettingsConfigDict(env_file=".env")
+    model_config = SettingsConfigDict(env_file=".env", extra="allow")
 
 
 @lru_cache
